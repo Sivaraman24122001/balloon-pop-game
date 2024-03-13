@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="Time Remaining: 2:00" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="Score: 0 | Missed: 0" />
+
+    <ImageView
+        android:id="@+id/balloonImageView"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:src="@drawable/balloon"
+
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:layout_marginTop="300dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/timerTextView"
+        android:onClick="onStartButtonClick" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerTextView"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:textStyle="bold"
+        android:onClick="onRestartButtonClick"
+        android:text="Start Game"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"/>
+
+</RelativeLayout>
